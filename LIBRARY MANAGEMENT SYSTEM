@@ -1,0 +1,25 @@
+class Book {
+    String title;
+    boolean issued;
+
+    Book(String title) {
+        this.title = title;
+        issued = false;
+    }
+
+    void issueBook() {
+        if (!issued) {
+            issued = true;
+            System.out.println("Book Issued: " + title);
+        } else {
+            System.out.println("Book already issued");
+        }
+    }
+}
+
+public class LibraryApp {
+    public static void main(String[] args) {
+        Book b = new Book("Java Programming");
+        b.issueBook();
+    }
+}
