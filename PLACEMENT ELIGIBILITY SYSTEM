@@ -1,0 +1,12 @@
+public class PlacementEligibility {
+    public static void main(String[] args) {
+
+        int cgpa = 7;
+        int arrears = 0;
+
+        if (cgpa >= 6.5 && arrears == 0)
+            System.out.println("Eligible for Placement");
+        else
+            System.out.println("Not Eligible");
+    }
+}
