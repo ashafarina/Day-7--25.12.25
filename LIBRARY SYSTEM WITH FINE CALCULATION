@@ -1,0 +1,22 @@
+class LibraryBook {
+    String name;
+    int daysLate;
+
+    LibraryBook(String name, int daysLate) {
+        this.name = name;
+        this.daysLate = daysLate;
+    }
+
+    void calculateFine() {
+        int fine = daysLate * 2;
+        System.out.println("Book: " + name);
+        System.out.println("Fine Amount: ₹" + fine);
+    }
+}
+
+public class LibraryFine {
+    public static void main(String[] args) {
+        LibraryBook b = new LibraryBook("Java", 5);
+        b.calculateFine();
+    }
+}
