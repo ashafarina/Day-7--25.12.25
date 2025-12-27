@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class QuizGame {
+    public static void main(String[] args) {
+
+        String[] questions = {
+            "Capital of India?",
+            "Java is OOPS? (yes/no)"
+        };
+        String[] answers = {"delhi", "yes"};
+
+        Scanner sc = new Scanner(System.in);
+        int score = 0;
+
+        for (int i = 0; i < questions.length; i++) {
+            System.out.println(questions[i]);
+            if (sc.next().equalsIgnoreCase(answers[i]))
+                score++;
+        }
+
+        System.out.println("Score: " + score);
+    }
+}
