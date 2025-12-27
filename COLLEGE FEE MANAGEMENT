@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class FeeManagement {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        int totalFee = 50000;
+        int paid;
+
+        System.out.print("Enter Paid Amount: ");
+        paid = sc.nextInt();
+
+        System.out.println("Remaining Fee: ₹" + (totalFee - paid));
+    }
+}
