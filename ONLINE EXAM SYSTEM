@@ -1,0 +1,17 @@
+ import java.util.Scanner;
+
+public class OnlineExam {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        int score;
+
+        System.out.print("Enter Score: ");
+        score = sc.nextInt();
+
+        if (score >= 40)
+            System.out.println("Exam Passed");
+        else
+            System.out.println("Exam Failed");
+    }
+}
