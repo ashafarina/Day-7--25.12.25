@@ -1,0 +1,25 @@
+class HostelStudent {
+    int roomNo;
+    boolean occupied;
+
+    HostelStudent(int roomNo) {
+        this.roomNo = roomNo;
+        occupied = false;
+    }
+
+    void allotRoom() {
+        if (!occupied) {
+            occupied = true;
+            System.out.println("Room " + roomNo + " Allotted");
+        } else {
+            System.out.println("Room Already Occupied");
+        }
+    }
+}
+
+public class HostelApp {
+    public static void main(String[] args) {
+        HostelStudent s = new HostelStudent(101);
+        s.allotRoom();
+    }
+}
