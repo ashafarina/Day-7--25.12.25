@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class MiniCollege {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("1.Library");
+        System.out.println("2.Hostel");
+        System.out.println("3.Placement");
+
+        int choice = sc.nextInt();
+
+        switch (choice) {
+            case 1 -> System.out.println("Library Section");
+            case 2 -> System.out.println("Hostel Office");
+            case 3 -> System.out.println("Placement Cell");
+            default -> System.out.println("Invalid Option");
+        }
+    }
+}
