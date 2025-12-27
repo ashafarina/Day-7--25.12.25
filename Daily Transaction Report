@@ -1,0 +1,12 @@
+ public class TransactionReport {
+    public static void main(String[] args) {
+
+        int[] transactions = {500, -200, 1000, -300};
+        int balance = 0;
+
+        for (int t : transactions)
+            balance += t;
+
+        System.out.println("Net Balance Change: ₹" + balance);
+    }
+}
