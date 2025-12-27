@@ -1,0 +1,12 @@
+public class BusManagement {
+    public static void main(String[] args) {
+
+        int[] students = {40, 38, 42};
+        int total = 0;
+
+        for (int s : students)
+            total += s;
+
+        System.out.println("Total Students Using Bus: " + total);
+    }
+}
