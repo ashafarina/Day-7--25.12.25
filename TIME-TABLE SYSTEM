@@ -1,0 +1,15 @@
+public class TimeTable h
+    public static void main(String[] args) {
+
+        String[] subjects = {"Java", "DBMS", "AI"};
+
+        int day = 2;
+
+        switch (day) {
+            case 1 -> System.out.println("Subject: " + subjects[0]);
+            case 2 -> System.out.println("Subject: " + subjects[1]);
+            case 3 -> System.out.println("Subject: " + subjects[2]);
+            default -> System.out.println("Holiday");
+        }
+    }
+}
