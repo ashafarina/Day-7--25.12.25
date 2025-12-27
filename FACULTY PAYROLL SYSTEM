@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class FacultyPayroll {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        int basic = 30000;
+        int allowance = 5000;
+
+        System.out.print("Enter Working Days: ");
+        int days = sc.nextInt();
+
+        int salary = (basic + allowance) * days / 30;
+        System.out.println("Salary: ₹" + salary);
+    }
+}
