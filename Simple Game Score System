@@ -1,0 +1,26 @@
+class Player {
+    String name;
+    int score;
+
+    Player(String name) {
+        this.name = name;
+    }
+
+    void addScore(int points) {
+        score += points;
+    }
+
+    void showScore() {
+        System.out.println(name + " Score: " + score);
+    }
+}
+
+public class GameApp {
+    public static void main(String[] args) {
+
+        Player p = new Player("Asha");
+        p.addScore(10);
+        p.addScore(20);
+        p.showScore();
+    }
+}
